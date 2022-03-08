@@ -72,5 +72,5 @@ def send_pocet_osob():
     return pocet_osob
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
     freezer.freeze()
