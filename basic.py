@@ -1,8 +1,10 @@
 from flask import Flask, render_template
 from form import InfoForm, NumberOfPersonsForm
+from flask_frozen import Freezer
 
 
 app = Flask(__name__)
+freezer = Freezer(app)
 
 app.config['SECRET_KEY'] = 'CoolSecretKey'
 
@@ -70,4 +72,5 @@ def send_pocet_osob():
     return pocet_osob
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
+    freezer.freeze()
