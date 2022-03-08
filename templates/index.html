@@ -1,0 +1,91 @@
+{%extends "main_template.html"%}
+
+{% block content %}
+
+<!-- Header-->
+<header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center">
+        <h1 class="text-white">Kuba s Eliškou se budou brát!</h1>
+        <h3 class="text-white"><em>Pojďte s námi oslavit náš vyjímečný den 30.9.2022 </em></h3>
+        <a class="btn btn-primary btn-xl" href="#about">CHCI VĚDĚT VÍCE</a>
+    </div>
+</header>
+<!-- About-->
+<section class="content-section bg-light" id="about">
+    <div class="container px-4 px-lg-5 text-center">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-10">
+                <h2>Obřad, hostina a oslava proběhne 30.9.2022 na Farmě Tasov. </h2>
+                <p class="lead mb-5">
+                    Obřad se bude konat v pátek, ale samotná svatba bude probíhat od čtvrtka do soboty, tak abychom se s vámi všemi mohli v klidu potkat a třeba dát i skleničku, nebo dvě s předstihem. 
+                </p>
+                <a class="btn btn-dark btn-xl" href="#portfolio">DEJTE NÁM VĚDĚT KDY VÁS MÁME OČEKÁVAT!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Portfolio-->
+<section class="content-section" id="portfolio">
+    <div class="container px-4 px-lg-5">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Informace</h3>
+            <h2 class="mb-5">Protože informací není nikdy dost</h2>
+        </div>
+        <div class="row gx-0">
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="informations">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="h2">Kde a kdy</div>
+                            <p class="mb-0">Všechny informace o tom kdy a kam dorazit.</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="static/images/portfolio-1.jpg" alt="..." />
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="casovy_plan">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="h2">Jak to bude probíhat</div>
+                            <p class="mb-0">Časový plán svatby a zábavy okolo.</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="static/images/portfolio-2.jpg" alt="..." />
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="prihlaska">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="h2">Přihláška</div>
+                            <p class="mb-0">Dejte nám o sobě nějaké info, kdy a jak přijedete a kolik vás bude.</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="static/images/portfolio-3.jpg" alt="..." />
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="ubytování">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="h2">Okolí</div>
+                            <p class="mb-0">Protože vás chceme pozvat na celý víkend do krásné části ČR rozhodně doufáme že se nebudete nudit a využijete některé krásné procházky v okolí.</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="static/images/portfolio-4.jpg" alt="..." />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map-->
+<div class="map" id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d333079.820975477!2d15.812083341815562!3d49.29181767804395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470d675abb50c0d3%3A0x3bdc9fcd088a0fe!2sFarma%20Tasov!5e0!3m2!1sen!2scz!4v1645389435286!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <br />
+</div>
+
+{% endblock %}
